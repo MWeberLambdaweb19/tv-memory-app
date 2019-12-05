@@ -14,3 +14,6 @@ React-Native: I want to learn React-Native and this app is going to work better 
 ### Back-End
 
 I want to use another technology that isn't ExpressJS
+
+12/4/19
+-I have decided to try using GraphQL
