@@ -4,6 +4,11 @@
 // ]
 
 export let users = [
-    { id: 1, name: "John Doe", email: "john@gmail.com", age: 22 },
-    { id: 2, name: "Jane Doe", email: "jane@gmail.com", age: 23 }
-  ];
+  { id: 1, name: "John Doe", email: "john@gmail.com", age: 22 },
+  { id: 2, name: "Jane Doe", email: "jane@gmail.com", age: 23 }
+];
+
+export let movies = [
+  {id: 1, name: "The Godfather", metascore: 81},
+  {id: 2, name: "Star Wars", metascore: 90}
+]

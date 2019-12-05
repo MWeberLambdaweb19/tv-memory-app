@@ -5,9 +5,20 @@
   "license": "MIT",
   "scripts": {
     "dev": "graphpack",
-    "build": "graphpack build"
+    "build": "graphpack build",
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "devDependencies": {
-    "graphpack": "^1.0.9"
+    "graphpack": "^1.0.9",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "knex": "^0.20.3",
+    "pg": "^7.14.0",
+    "sqlite3": "^4.1.1"
   }
 }

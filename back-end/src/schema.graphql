@@ -1,12 +1,20 @@
 type User {
-    id: ID!
-    name: String!
-    email: String!
-    age: Int
+  id: ID!
+  name: String!
+  email: String!
+  age: Int
+}
+
+type Movie {
+  id: ID!
+  name: String!
+  metascore: Int!
 }
 
 type Query {
   hello: String
   users: [User!]!
   user(id: ID!): User!
+  movies: [Movie!]!
+  movie(id: ID!): Movie!
 }
