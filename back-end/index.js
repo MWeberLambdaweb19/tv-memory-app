@@ -1,3 +1,4 @@
+const {users} = require('./db.js')
 const express = require('express')
 const graphqlHTTP = require('express-graphql')
 let {buildSchema} = require('graphql')
@@ -5,12 +6,21 @@ let {buildSchema} = require('graphql')
 let schema = buildSchema(`
     type Query {
         hello: String
+        users: [User!]!
+        user(id = ID!): User!
+    }
+    type User {
+        id: ID!
+        name: String!
     }
 `)
 
 let root = {
     hello: () => {
         return 'Hello World!'
+    },
+    users: (parent, args, context, info) => {
+        return users
     }
 }
 
